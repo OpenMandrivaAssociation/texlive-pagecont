@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/pagecont
+# catalog-date 2009-11-10 09:17:41 +0100
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-pagecont
 Version:	1.0
 Release:	1
@@ -44,6 +50,7 @@ were a single document.
 #- source
 %doc %{_texmfdistdir}/source/latex/pagecont/pagecont.dtx
 %doc %{_texmfdistdir}/source/latex/pagecont/pagecont.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ were a single document.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
