@@ -1,6 +1,6 @@
 Name:		texlive-pagecont
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Page numbering that continues between documents
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/pagecont
